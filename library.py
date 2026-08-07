@@ -41,7 +41,7 @@ def save():
   status='Available'
   with open('library_books.txt','w') as file:
     for title,status in library.items():
-      file.write(f'{title}: {status}')
+      file.write(f'{title}: {status}\n')
 def main():
   while True:
     print('=== LIBRARY MANAGEMENT SYSTEM ===')
